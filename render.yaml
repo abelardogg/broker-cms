@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: arrowhead-cms
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.15.1
+      - key: NODE_ENV
+        value: production
