@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": "Real estate properties for sale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "decimal"
+    },
+    "sqft": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "default": "CA"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["active", "pending", "sold"],
+      "default": "active"
+    },
+    "propertyType": {
+      "type": "enumeration",
+      "enum": ["residential", "commercial", "land"],
+      "default": "residential"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "mls": {
+      "type": "string"
+    }
+  }
+}

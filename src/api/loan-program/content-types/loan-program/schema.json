@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loan_programs",
+  "info": {
+    "singularName": "loan-program",
+    "pluralName": "loan-programs",
+    "displayName": "Loan Program",
+    "description": "Mortgage and loan programs offered"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "loan.feature"
+    },
+    "requirements": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "string",
+      "default": "Home"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

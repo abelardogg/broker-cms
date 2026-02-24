@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(dir:*)",
+      "Bash(psql:*)",
+      "Bash(where:*)",
+      "Bash(powershell:*)",
+      "Bash(npm run develop:*)",
+      "Bash(\"C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe\" --version)",
+      "Bash(\"C:\\\\Program Files\\\\PostgreSQL\\\\16\\\\bin\\\\psql.exe\" --version)",
+      "Bash(\"C:\\\\Program Files\\\\PostgreSQL\\\\15\\\\bin\\\\psql.exe\" --version)",
+      "Bash(mkdir:*)",
+      "Bash(node scripts/seed.mjs:*)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
